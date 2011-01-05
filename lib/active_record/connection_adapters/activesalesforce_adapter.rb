@@ -861,7 +861,7 @@ module ActiveRecord
         # See if a table name to AR class mapping was registered
         klass = @class_to_entity_map[table_name.upcase]
 
-        entity_name = klass ? raw_table_name : table_name.camelize
+        entity_name = klass ? raw_table_name : (table_name =~ /__/ ? table_name : table_name.camelize)
         entity_def = get_entity_def(entity_name)
 
         [table_name, entity_def.columns, entity_def]
