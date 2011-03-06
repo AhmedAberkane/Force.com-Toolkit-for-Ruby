@@ -7,14 +7,15 @@ begin
     gem.name = "asf-soap-adapter"
     gem.summary = %Q{ASF-Soap-Adapter is an improved version of the ActiveSalesforce (ASF) Adapter with support Chatter and general wrapper object.}
     gem.description = %Q{ASF-Soap-Adapter is an improved version of ActiveSalesforce (ASF) is a Rails connection adapter that provides direct access to Salesforce.com hosted data and metadata via the ActiveRecord model layer. Objects, fields, and relationships are all auto surfaced as active record attributes and rels. It has been patched to V20 of the Web Services API and has support Chatter model.}
-    gem.email = "raygao2000@yahoo.com"
+    gem.email = "qwall@salesforce.com"
     gem.homepage = "http://github.com/raygao/asf-soap-adapter"
-    gem.authors = ["Doug Chasman","Luigi Montanez","Senthil Nayagam","Justin Ball","Jesse Hallett", "Andrew Freeberg", "Blaine Schanfeldt", "Matte Edens", "Raymond Gao"]
+    gem.authors = ["Doug Chasman","Luigi Montanez","Senthil Nayagam","Justin Ball","Jesse Hallett", "Andrew Freeberg", "Blaine Schanfeldt", "Matte Edens", "Raymond Gao", "Quinton Wall", "Chiharu Kawatake"]
 
     # Requiring RForce as an add-on gem, rather than hard-code the 0.4.0
-    gem.add_dependency('rforce', '>=0.4.1')
+    gem.add_dependency('rforcedotcom', '>=20.1.0')
     gem.add_dependency('builder', '>= 1.2.4')
     gem.add_dependency('hpricot', '>=0.8.2')
+    gem.add_dependency('htmlentities', '>=4.2.2')    
 
     #gem.add_dependency('rails', '>= 2.3.3')
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
